@@ -530,6 +530,9 @@ nav {
   margin-left: 24px;
   margin-right: 24px;
 }
+.modal-field {
+  margin-bottom: 24px;
+}
 .input-wrap {
   position: relative;
 }
@@ -544,6 +547,7 @@ nav {
   margin-bottom: 8px;
   margin-left: 24px;
   margin-right: 24px;
+  outline: transparent;
 }
 .modal-input::placeholder {
   font-size: 12px;
@@ -588,6 +592,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  fill: transparent;
 }
 /*.check-text::before {
   content: "";
@@ -597,3 +602,29 @@ nav {
   border-radius: 2px;
   margin-right: 10px;
 }*/
+.input-check:checked + .check-text span {
+  background-color: var(--hover-blue-color);
+  border: none;
+  fill: #f4f4fd;
+}
+.subscribe-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: transparent;
+  padding-left: 16px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  color: #ffffff;
+}
+.subscribe-form {
+  display: flex;
+}
+.footer-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
