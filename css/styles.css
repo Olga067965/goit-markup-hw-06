@@ -529,6 +529,7 @@ nav {
   margin-top: 24px;
   margin-left: 24px;
   margin-right: 24px;
+  margin-bottom: 16px;
 }
 .modal-field {
   margin-bottom: 24px;
@@ -568,13 +569,14 @@ nav {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  margin-bottom: 4px;
+  /*margin-bottom: 4px;
   margin-left: 24px;
-  margin-right: 24px;
+  margin-right: 24px;*/
 }
 .modal-label span {
   display: block;
   margin-bottom: 4px;
+  margin-left: 24px;
 }
 .modal-icon {
   position: absolute;
