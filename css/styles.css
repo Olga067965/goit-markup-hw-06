@@ -531,9 +531,6 @@ nav {
   margin-right: 24px;
   margin-bottom: 16px;
 }
-.modal-field {
-  margin-bottom: 24px;
-}
 .input-wrap {
   position: relative;
   /*display: block;*/
@@ -565,15 +562,13 @@ nav {
 .modal-input:is(:hover, :focus) {
   border: 1px solid #4d5ae5;
   border-radius: 4px;
+  color: var(--blue-color);
 }
 .modal-label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  /*margin-bottom: 4px;
-  margin-left: 24px;
-  margin-right: 24px;*/
 }
 .modal-label-title {
   display: block;
@@ -605,14 +600,19 @@ nav {
   padding-left: 16px;
   letter-spacing: 0.04em;
 }
-.check-text {
-  font-size: 12px;
+.modal-field {
+  margin-bottom: 24px;
+  margin-left: 24px;
   display: flex;
   align-items: center;
-  line-height: 14px;
-  letter-spacing: 0.04em;
+  height: 16px;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.17;
   color: #8e8f99;
-  max-width: 360px;
+}
+.check-text {
+  color: #8e8f99;
 }
 .check-text span {
   width: 16px;
@@ -621,8 +621,6 @@ nav {
   border-radius: 2px;
   margin-right: 10px;
   display: flex;
-  align-items: center;
-  justify-content: center;
   fill: transparent;
 }
 /*.check-text::before {
