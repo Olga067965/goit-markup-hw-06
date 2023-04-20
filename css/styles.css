@@ -627,6 +627,15 @@ nav {
 }
 .p-check-box {
   max-width: 338px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
 }
 /*.check-text::before {
   content: "";
