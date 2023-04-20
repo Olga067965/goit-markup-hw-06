@@ -536,7 +536,7 @@ nav {
 }
 .input-wrap {
   position: relative;
-  display: block;
+  /*display: block;*/
 }
 .modal-input {
   box-sizing: border-box;
@@ -553,12 +553,14 @@ nav {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
 }
 .modal-input::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
+  display: flex;
 }
 .modal-input:is(:hover, :focus) {
   border: 1px solid #4d5ae5;
@@ -580,10 +582,28 @@ nav {
 }
 .modal-icon {
   position: absolute;
-  left: 5px;
+  left: 42px;
   top: 50%;
   transform: translateY(-50%);
   color: var(--dark-color);
+}
+.modal-divider {
+  width: 18px;
+  height: 0px;
+  position: absolute;
+  left: 7px;
+  top: 50%;
+  color: var(--dark-color);
+  display: flex;
+}
+.comment {
+  width: 100%;
+  max-width: 360px;
+  padding-top: 8px;
+  min-height: 120px;
+  resize: none;
+  padding-left: 16px;
+  letter-spacing: 0.04em;
 }
 .check-text {
   font-size: 12px;
@@ -592,6 +612,7 @@ nav {
   line-height: 14px;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  max-width: 360px;
 }
 .check-text span {
   width: 16px;
@@ -603,6 +624,9 @@ nav {
   align-items: center;
   justify-content: center;
   fill: transparent;
+}
+.p-check-box {
+  max-width: 338px;
 }
 /*.check-text::before {
   content: "";
@@ -680,7 +704,7 @@ nav {
   height: 20px;
 }
 .send-modal-btn {
-  display: flex;
+  display: block;
   width: 169px;
   height: 56px;
   background: #4d5ae5;
@@ -689,11 +713,12 @@ nav {
   padding: 16px 32px;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
   color: #ffffff;
   outline: transparent;
   border: none;
+  margin-top: 24px;
+  margin-left: 119px;
 }
