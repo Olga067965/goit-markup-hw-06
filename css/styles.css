@@ -666,6 +666,8 @@ nav {
   top: 50%;
   transform: translateY(-50%);
   color: var(--dark-color);
+  box-sizing: content-box;
+  width: 100%;
 }
 .comment {
   width: 100%;
