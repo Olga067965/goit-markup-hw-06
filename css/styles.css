@@ -349,12 +349,12 @@ nav {
 .bottom-logo-container {
   max-width: 264px;
   padding-left: 156px;
-  box-sizing:content-box;
+  box-sizing: content-box;
 }
 .bottom-soc-container {
   padding-left: 120px;
   max-width: 208px;
-  box-sizing:content-box;
+  box-sizing: content-box;
 }
 .bottom-soc-text {
   font-weight: 500;
@@ -390,7 +390,7 @@ nav {
 .bottom-subscribe-container {
   padding-left: 80px;
   max-width: 453px;
-  box-sizing:content-box;
+  box-sizing: content-box;
   align-items: center;
 }
 .bottom-form-title {
@@ -404,6 +404,12 @@ nav {
 .bottom-sub-item {
   display: flex;
   height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.bottom-sub-item .bplane {
+  position: relative;
+  align-items: center;
 }
 .bottom-subscribe-input {
   width: 264px;
@@ -417,6 +423,7 @@ nav {
   line-height: 2;
   color: #ffffff;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 40px;
 }
 .bottom-subscribe-input::placeholder {
   font-size: 12px;
@@ -443,16 +450,23 @@ nav {
   text-align: center;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  height: 40px;
 }
 .bottom-button:is(:hover, :focus) {
   background: #404bbf;
+}
+.bottom-plane {
+  text-align: center;
+}
+.bottom-plane + .bplane {
+  position: relative;
+  bottom: 10px;
 }
 .bplane {
   margin-left: 16px;
   fill: #ffffff;
   width: 24px;
   height: 20px;
-  margin-top: 10px;
 }
 .portfolio {
   padding-top: 96px;
