@@ -372,16 +372,17 @@
       </section>
     </main>
     <footer class="bottom">
-      <div class="bottom-logo container">
-        <a class="logo link" href="./index.html"
+      <div class="bottom-container">
+        <div class="bottom-logo-container">
+          <a class="logo link" href="./index.html"
           >Web<span class="bottom-logo-second">Studio</span></a
         >
         <p class="bottom-logo-text text">
           Increase the flow of customers and sales for your business with
           digital marketing & growth solutions.
         </p>
-      </div>
-      <div class="bottom-soc container">
+        </div>
+        <div class="bottom-soc-container">
         <p class="bottom-soc-text text">Social media</p>
         <ul class="bottom-soc-list list">
           <li class="bottom-soc-item">
@@ -413,25 +414,23 @@
             </a>
           </li>
         </ul>
-      </div>
-
-      <div class="bottom-subscribe-container">
-        <form class="bottom-subscribe-form"><div class="footer-sub-form"><label for="user-sub-email"></label>
-          <p class="bottom-form-title">Subscribe</p>
-          <input class="bottom-subscribe-input" id="subscribe-input" placeholder="E-mail" type="email" name="subscribe-email" title="email"></div>
-      </div>
-      <div>
-        <button class="bottom-button" type="submit">
-          <span class="bottom-plane">
-            Subscribe
+        </div>
+        <div class="bottom-subscribe-container">
+        <form class="bottom-subscribe-form">
+            <p class="bottom-form-title">Subscribe</p>
+            <div class="bottom-sub-item">
+              <input class="bottom-subscribe-input" id="subscribe-input" placeholder="E-mail" type="email" name="subscribe-email" title="email">
+              <button class="bottom-button" type="submit">
+              <span class="bottom-plane">
+              Subscribe
             <svg class="bplane" width="40" height="24">
                 <use href="./images/icons.svg#icon-frame"></use>
             </svg>
-          </span>
-        </button>
+            </span>
+          </button></div>
+        </form>
+        </div>
       </div>
-
-
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -443,9 +442,6 @@
             ></use>
           </svg>
         </button>
-        
-
-
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <label class="modal-label"
@@ -454,7 +450,7 @@
               ><input class="modal-input" type="text" name="user-name" />
               <svg class="modal-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-person"></use>
-              </svg><span class="modal-divider">|</span>
+              </svg>
             </span>
           </label>
           <label class="modal-label"
@@ -500,7 +496,5 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>
   </body>
 </html>
