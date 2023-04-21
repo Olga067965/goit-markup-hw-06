@@ -406,10 +406,7 @@ nav {
   height: 40px;
   align-items: center;
   justify-content: center;
-}
-.bottom-sub-item .bplane {
   position: relative;
-  align-items: center;
 }
 .bottom-subscribe-input {
   width: 264px;
@@ -458,15 +455,17 @@ nav {
 .bottom-plane {
   text-align: center;
 }
-.bottom-plane + .bplane {
+.bottom-plane .bplane {
   position: relative;
-  bottom: 10px;
+  text-align: center;
+  justify-content: center;
 }
 .bplane {
   margin-left: 16px;
   fill: #ffffff;
   width: 24px;
   height: 20px;
+  display: inline;
 }
 .portfolio {
   padding-top: 96px;
