@@ -452,6 +452,7 @@ nav {
   height: 40px;
   width: 165px;
   margin-left: 24px;
+  border: none;
 }
 .bottom-button:is(:hover, :focus) {
   background: var(--hover-blue-color);
@@ -584,11 +585,13 @@ nav {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1) rotate(0);
-  transition: transform 1s linear;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0) rotate(-180deg);
-  transition: 2s;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-modal-btn {
   width: 24px;
@@ -745,4 +748,6 @@ nav {
   border: none;
   margin-top: 24px;
   margin-left: 119px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
